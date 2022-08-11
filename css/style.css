@@ -81,13 +81,15 @@
  }
 
  .options-food h1 {
-    font-weight: 700px;
-    font-size: 16px;
-    line-height: 18.75px;
-    margin-left: 14px;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 18.75px;
+   margin-left: 14px;
  }
 
  .options-food p {
+   font-family: 'Roboto';
     font-weight: 300;
     font-size: 15px;
     line-height: 17.58px;
@@ -97,6 +99,7 @@
  }
 
  .options-food h2 {
+   font-family: 'roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 18.75px;
@@ -106,7 +109,7 @@
  .box-bottom {
    position: fixed;
    bottom: 0px;
-   top: 600px;
+
     width: 414px;
     height: 92px;
     background-color: #FFFFFF;
