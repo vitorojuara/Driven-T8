@@ -14,7 +14,8 @@
  body {
    font-family: 'Roboto';
  }
-.mobile {
+
+ .mobile {
     display: initial;
 }
 
@@ -26,9 +27,11 @@
     position: fixed;
     display: flex;
     top: 0px;
+    left: 0px;
     width: 414px;
     height: 92px;
     background-color: #CF2B2B;
+    box-shadow: 5px 5px 5px #aaaa;
  }
 
  .page-title {
@@ -52,13 +55,27 @@
 
  .choice-food {
     height: 250px;
-    width: 900px;   
+    width: 925px;   
     
     
     margin-left: 19px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+ }
+
+ .choice-food3 {
+   height: 250px;
+   width: 925px;   
     
+    
+    margin-left: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 108px;
+    overflow-x: scroll;
+
  }
 
  .options-food {
@@ -71,6 +88,7 @@
     align-items: flex-start;
     margin-top: 17px;
     border-radius: 9px;
+    box-shadow: 1px 1px #aaaa;
  }
 
  .options-food img {
@@ -128,8 +146,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    border: 0;
     border-radius: 50px;
-   z-index: 1;
+    z-index: 1;
  }
  .button-box p {
     color: #FFFFFF;
@@ -139,19 +158,16 @@
     line-height: 23.44px;
  }
 
- .button-box p:hover {
-    text-decoration: underline blue;
- }
  
  .titulo1 {
-   margin-top: 123px;
+   margin-top: 110px;
  }
  .titulo2 {
-   margin-top: -27px;
+   margin-top: -23px;
  }
  
  .titulo3 {
-   margin-top: -27px;
+   margin-top: -23px;
  }
 
  .titulo1 h1, .titulo2 h1, .titulo3 h1 {
