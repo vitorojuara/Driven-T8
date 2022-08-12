@@ -73,7 +73,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 108px;
     overflow-x: scroll;
 
  }
@@ -125,15 +124,14 @@
  }
 
  .box-bottom {
-   position: fixed;
-   bottom: 0px;
 
-    width: 414px;
-    height: 92px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   position: fixed;
+   width: 414px;
+   height: 92px;
+   background-color: #FFFFFF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     
  }
 
@@ -178,4 +176,8 @@
     font-weight: 400;
  }
 
+
+ .selected {
+   border: 10px green;
+ }
 }
