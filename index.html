@@ -9,211 +9,178 @@
     <title>DrivenEats</title>
 </head>
 <body>
-    <div class="top">
-        <div class="titulo-top">
-            <h1>DrivenEats</h1>
-            <h2>Sua comida em 6 minutos</h2>
-        </div>
-    </div>
-    <div class="conteudo">
-        <h1>Primeiro, seu prato</h1>
-        <div class="scroll">
-            <div class="box" onclick="selecionarPrato(this)">
-                <div class="box2">
-                    <img src="./imgs/sanduiche-artesanal.jpg">
-                    <h1>X-tudo</h1>
-                    <p>Hamburguer 120g,
-                         molho e salada</p>
-                    <h2>R$ 12</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarPrato(this)">
-                    <img src="./imgs/sanduiche-artesanal.jpg">
-                    <h1>X-tudo</h1>
-                    <p>Hamburguer 120g,
-                         molho e salada</p>
-                    <h2>R$ 12</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarPrato(this)">
-                    <img src="./imgs/sanduiche-artesanal.jpg">
-                    <h1>X-tudo</h1>
-                    <p>Hamburguer 120g,
-                         molho e salada</p>
-                    <h2>R$ 12</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarPrato(this)">
-                    <img src="./imgs/sanduiche-artesanal.jpg">
-                    <h1>X-tudo</h1>
-                    <p>Hamburguer 120g,
-                         molho e salada</p>
-                    <h2>R$ 12</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarPrato(this)">
-                    <img src="./imgs/sanduiche-artesanal.jpg">
-                    <h1>X-tudo</h1>
-                    <p>Hamburguer 120g,
-                         molho e salada</p>
-                    <h2>R$ 12</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
+    <div class="container">
+        
+        <div class="topbar">
+            <div class="titletop">
+                <h1>DrivenEats</h1>
+                <h2>Sua comida em 6 minutos</h2>
             </div>
         </div>
-    </div>
-    <div class="conteudo1">
-        <h1>Agora, sua bebida</h1>
-        <div class="scroll1">
-            <div class="box">
-                <div class="box2" onclick="selecionarBebida(this)">
-                    <img src="./imgs/coca-cola.jpg">
-                    <h1>Coca-cola</h1>
-                    <p>Lata 350ml</p>
-                    <h2>R$ 4,50</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+
+        <div class="content">
+            <h1>Primeiro, seu prato</h1>
+            <div class="menu-comidas">
+                <div class="box" onclick="selectedFood(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/hamburguer_shutterstock.jpg">
+                        <h2>Cheese Bacon</h2>
+                        <p>Hamburguer 120g, bacon e cheddar</p>
+                        <h3>R$ 18,90</h3>
+                    </div>
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>                   
+                </div>
+                <div class="box" onclick="selectedFood(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/panqueca-de-frango.jpg">
+                        <h2>Panqueca Frango</h2>
+                        <p>Panqueca com molho e verduras</p>
+                        <h3>R$ 14,50</h3>
+                    </div>
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>      
+                </div>
+                <div class="box" onclick="selectedFood(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/pizza_calabresa_e_mussarela_4389_600.jpg">
+                        <h2>Pizza Calabresa</h2>
+                        <p>Calabresa, mussarela e molho de tomate</p>
+                        <h3>R$ 29,90</h3>
+                    </div>  
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon> 
+                </div>
+                <div class="box" onclick="selectedFood(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/file-com-fritas.jpg">
+                        <h2>Filé com Fritas</h2>
+                        <p>Bife acebolado com batata frita</p>
+                        <h3>R$ 25</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="box" onclick="selectedFood(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/frango-shoyu.jpg">
+                        <h2>Frango ao Shoyu</h2>
+                        <p>Frango no forno ao molho Shoyu</p>
+                        <h3>R$ 23</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarBebida(this)">
-                    <img src="./imgs/coca-cola.jpg">
-                    <h1>Coca-cola</h1>
-                    <p>Lata 350ml</p>
-                    <h2>R$ 4,50</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <br>
+            <h1>Agora, sua bebida</h1>
+            <div class="menu-bebidas">
+                <div class="box" onclick="selectedDrinks(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/coca-cola-768x432.jpg">
+                        <h2>Coca-Cola</h2>
+                        <p>Lata 350ml</p>
+                        <h3>R$ 4,50</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>                  
+                </div>
+                <div class="box" onclick="selectedDrinks(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/suco-de-maracuja-5cdd87ba01239.jpg">
+                        <h2>Suco Maracujá</h2>
+                        <p>Suco da fruta 350ml</p>
+                        <h3>R$ 8,90</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>       
+                </div>
+                <div class="box" onclick="selectedDrinks(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/pizza_calabresa_e_mussarela_4389_600.jpg">
+                        <h2>Pizza Calabresa</h2>
+                        <p>Calabresa, mussarela e molho de tomate</p>
+                        <h3>R$ 29,90</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>  
+                </div>
+                <div class="box" onclick="selectedDrinks(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/file-com-fritas.jpg">
+                        <h2>Filé com Fritas</h2>
+                        <p>Bife acebolado com batata frita</p>
+                        <h3>R$ 25</h3>
+                    </div>
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon> 
+                </div>
+                <div class="box" onclick="selectedDrinks(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/frango-shoyu.jpg">
+                        <h2>Frango ao Shoyu</h2>
+                        <p>Frango no forno ao molho Shoyu</p>
+                        <h3>R$ 23</h3>
+                    </div>
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon> 
                 </div>
             </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarBebida(this)">
-                    <img src="./imgs/coca-cola.jpg">
-                    <h1>Coca-cola</h1>
-                    <p>Lata 350ml</p>
-                    <h2>R$ 4,50</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <br>
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="menu-sobremesas">
+                <div class="box" onclick="selectedIcecream(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/coca-cola-768x432.jpg">
+                        <h2>Coca-Cola</h2>
+                        <p>Lata 350ml</p>
+                        <h3>R$ 4,50</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>                  
                 </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarBebida(this)">
-                    <img src="./imgs/coca-cola.jpg">
-                    <h1>Coca-cola</h1>
-                    <p>Lata 350ml</p>
-                    <h2>R$ 4,50</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                <div class="box" onclick="selectedIcecream(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/suco-de-maracuja-5cdd87ba01239.jpg">
+                        <h2>Suco Maracujá</h2>
+                        <p>Suco da fruta 350ml</p>
+                        <h3>R$ 8,90</h3>
+                    </div>   
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>     
                 </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarBebida(this)">
-                    <img src="./imgs/coca-cola.jpg">
-                    <h1>Coca-cola</h1>
-                    <p>Lata 350ml</p>
-                    <h2>R$ 4,50</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                <div class="box" onclick="selectedIcecream(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/pizza_calabresa_e_mussarela_4389_600.jpg">
+                        <h2>Pizza Calabresa</h2>
+                        <p>Calabresa, mussarela e molho de tomate</p>
+                        <h3>R$ 29,90</h3>
+                    </div>   
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="conteudo2">
-        <h1>Por fim, sua sobremesa</h1>
-        <div class="scroll2">
-            <div class="box">
-                <div class="box2" onclick="selecionarSobremesa(this)">
-                    <img src="./imgs/mcflurry.jpg">
-                    <h1>Mc Flurry</h1>
-                    <p>Sabor Laka e
-                        Diamante negro
-                    </p>
-                    <h2>R$ 9,99</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                <div class="box" onclick="selectedIcecream(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/file-com-fritas.jpg">
+                        <h2>Filé com Fritas</h2>
+                        <p>Bife acebolado com batata frita</p>
+                        <h3>R$ 25</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>
                 </div>
-            </div>
-            <div class="box" onclick="selecionarSobremesa(this)">
-                <div class="box2">
-                <img src="./imgs/mcflurry.jpg">
-                    <h1>Mc Flurry</h1>
-                    <p>Sabor Laka e
-                        Diamante negro
-                    </p>
-                    <h2>R$ 9,99</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarSobremesa(this)">
-                <img src="./imgs/mcflurry.jpg">
-                    <h1>Mc Flurry</h1>
-                    <p>Sabor Laka e
-                        Diamante negro
-                    </p>
-                    <h2>R$ 9,99</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarSobremesa(this)">
-                <img src="./imgs/mcflurry.jpg">
-                    <h1>Mc Flurry</h1>
-                    <p>Sabor Laka e
-                        Diamante negro
-                    </p>
-                    <h2>R$ 9,99</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box2" onclick="selecionarSobremesa(this)">
-                <img src="./imgs/mcflurry.jpg">
-                    <h1>Mc Flurry</h1>
-                    <p>Sabor Laka e
-                        Diamante negro
-                    </p>
-                    <h2>R$ 9,99</h2>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+                <div class="box" onclick="selectedIcecream(this)">
+                    <div class="inside-box">
+                        <img src="./imgs/frango-shoyu.jpg">
+                        <h2>Frango ao Shoyu</h2>
+                        <p>Frango no forno ao molho Shoyu</p>
+                        <h3>R$ 23</h3>
+                    </div> 
+                    <ion-icon class="icon" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
-    </div>
+
         
 
-    <div class="bot">
-        <button disabled class="botao-selecionar" onclick="confirmarPedido();telaConfirmacao()">
-            <p>Selecione os 3 itens</p>
-            <p>para fechar o pedido</p>
-        </button>
+
+
+        <div class="bottombar">
+            <button disabled class="bottom-button">
+                Selecione os 3 itens<br> para fechar o pedido
+            </button>
+        </div>
+
     </div>
 
-    <div class="overlay">
-        <div class="confirmation-screen"></div>
-        <div class="confirmation-box">
-            <h3>Confirme seu pedido</h3>
-            <div class="conf-comida">
-                <p class="nome-do-prato">prato</p>
-                <p class="preco-do-prato">valor</p>
-            </div>
-            <div class="conf-bebida">
-                <p class="nome-do-prato">prato</p>
-                <p class="preco-do-prato">valor</p>
-            </div>
-            <div class="conf-sobremesa">
-                <p class="nome-do-prato">prato</p>
-                <p class="preco-do-prato">valor</p>
-            </div>
-            <div>
-                <h3>TOTAL</h3>
-                <h3 class="preco-total">45,00</h3>
-            </div>
-            <button class="confirmar" onclick="whatsapp()">Tudo certo, pode pedir!</button>
-            <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
-        </div>
-        
-    <script src="./javascript/javascript.js" ></script>
+    
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
