@@ -57,22 +57,33 @@ function selected() {
     }
 }
 
+function calcTotal() {
+    const precoFood = document.querySelector('.menu-comidas .selected span').innerHTML
+    const precoDrink = document.querySelector('.menu-bebidas .selected span').innerHTML
+    const precoDessert = document.querySelector('.menu-sobremesas .selected span').innerHTML
+    
+
+    const precoFood1 = Number(precoFood.replace(",","."))
+    const precoDrink1 = Number(precoDrink.replace(",","."))
+    const precoDessert1 = Number(precoDessert.replace(",","."))
+
+    totalWpp = precoFood1 + precoDrink1 + precoDessert1 
+}
 
 function wpp() {
-    const comidaWpp = document.querySelector('.menu-comidas .selected h2').innerHTML + ' ' +
-    document.querySelector('.menu-comidas .selected h3').innerHTML;
+    const comidaWpp = document.querySelector('.menu-comidas .selected h2 ').innerHTML 
     
-    const bebidaWpp = document.querySelector('.menu-bebidas .selected h2').innerHTML + ' ' +
-    document.querySelector('.menu-bebidas .selected h3').innerHTML;
+    const bebidaWpp = document.querySelector('.menu-bebidas .selected h2').innerHTML 
 
-    const sobremesaWpp = document.querySelector('.menu-sobremesas .selected h2').innerHTML + ' ' +
-    document.querySelector('.menu-sobremesas .selected h3').innerHTML; 
+    const sobremesaWpp = document.querySelector('.menu-sobremesas .selected h2').innerHTML
 
-    const msgWpp = `Olá, gostaria de fazer o pedido: \n
-    - Prato: ${comidaWpp} \n
-    - Bebida: ${bebidaWpp} \n
-    - Sobremesa: ${sobremesaWpp} \n
-    Total : ${totalWpp}`
+    calcTotal()
+
+    const msgWpp = `Olá, gostaria de fazer o pedido:
+    - Prato: ${comidaWpp} 
+    - Bebida: ${bebidaWpp} 
+    - Sobremesa: ${sobremesaWpp} 
+    Total : R$ ${totalWpp}`
 
     let encode = encodeURIComponent(msgWpp)   
 
